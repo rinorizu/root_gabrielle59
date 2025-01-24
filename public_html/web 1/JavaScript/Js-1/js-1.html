@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo 1</title>
+
+    <style>
+        body{background-color: aliceblue;}
+    </style>
+</head>
+<body>
+        <h1>JavaScript - Demo 1</h1>
+        <!-- <audio src="sounds/cartoon-142268.mp3" controls></audio> -->
+
+        <main id="content">loading</main>
+
+         <button onclick="eatPizza()">Click Me!!</button>
+        
+        <script>
+            alert('Hello Hello :D')
+            console.log("Page Loaded Successfully!");
+
+            //Variables
+            //Dynamic variable type "let" (data can be changed)
+            let myName = "Gabby";
+            
+            myName = "Rin";
+
+            console.log(myName);
+
+            //constant variable (data can't be changed)
+            const pi = 3.14159;
+
+            console.log(pi * 5);
+
+            // mix message logging
+            // uses + concatenate strings with other strings or data
+            // String = textual data in quotes
+            console.log("Pi times 5: " + pi * 5)
+
+            let mySound = new Audio("sounds/cartoon-142268.mp3")
+
+             const  myContent = document.getElementById("content");
+
+             myContent.innerHTML = "Hello hello"
+
+            function eatPizza() {
+                // alert("NOM NOM NOM🧚🏻‍♀️");
+                mySound.play();
+                myContent.innerHTML = '<h2>NOM NOM NOM</h2><img src="../img/kirby-star2.png">'
+
+            }
+
+
+        </script>
+</body>
+</html>

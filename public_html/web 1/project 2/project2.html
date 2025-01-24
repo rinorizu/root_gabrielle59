@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2 | My Character</title>
+    <link rel="stylesheet" href="../project 2/style.css">
+</head>
+
+<body>
+    <h1>Tuxedo Calico</h1>
+    <img src="./img/Group 5.png" alt="">
+
+    <p>
+        "Sir Top-Hat-Cat-Mat-Pat the Fifth is a fine young calico gentlemen cat"
+    </p>
+    <P>
+        "I like my Sootcase"
+    </P>
+
+    <h3>
+        The Design Process
+    </h3>
+    <img class="screenshot" src="img/Screenshot 2024-11-21 at 3.24.46 PM.png" alt="">
+
+    <button id="game" onclick="top.location.href = '../Project 3/project3.html'">Play Game!</button>
+
+
+
+    <div id="panel">boop to open</div>
+
+    <script>
+        const panel = document.getElementById("panel");
+        const sound = new Audio ("sounds/magic.mp3")
+        panel.onclick = function(){
+            this.classList.toggle("slide-up");
+            sound.play();
+
+        //    myPanel.classList.toggle("slide-up")
+        // mySlider.play();
+        }
+    </script>
+</body>
+</html>

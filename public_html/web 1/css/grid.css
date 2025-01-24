@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: pink;
+}
+
+#container{
+    display: grid;
+    /* grid-template-colums: 1fr 1fr 1fr; */
+
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-=colums: 1fr 2fr 2fr*/
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 20px;
+
+    padding-top: 30px;
+
+    /*limit width*/
+    max-width: 2000px;
+    /*center grid*/
+    position: relative;
+    margin: 0 auto;
+}
+
+#container div
+.grid-item{
+    min-height: 300px;
+    background-color: aliceblue;
+    height: fit-content;
+}
+
+/*Individual items*/
+.grid-item.a{
+    background-color: rgb(#CFCCD6);
+    rotate: -5deg;
+}
+
+.grid-item.b{
+    background-color: rgb(#b6aef8);
+}
+
+.grid-item.c{
+    background-color: rgb(#B7B5E4);
+}
+
+.grid-item.d{
+    background-color: rgb(#e27272);
+    rotate: 45deg;
+}
+
+.grid-item.e{
+    background-color: rgb(#94BFA7);
+    rotate: 10deg;
+}
+
+.grid-item.f{
+    background-color: rgb(#F7A1C4);
+}
+
+.polaroid{
+    border: 20px solid white;
+    border-bottom: 60px solid white;
+    box-shadow: 2px 10px 13px #00007900;
+}
+
+.grid-item img{
+    width: 100%;
+}
+
+/* override | fix for frame height*/
+.grid-item.b{
+    /*height: 260px;*/
+    background-color: white;
+    min-height: unset;
+}
+
+figcaption{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    #container {
+        grid-template-columns: repeat(2, 1fr);}
+}
+/*Mobile*/
+@media screen and (max-width: 430px){
+    #container {
+        grid-template-columns: 1fr;
+    }
+}
+    
+    

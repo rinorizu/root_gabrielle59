@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    /* 3d */
+    perspective: 350px;
+}
+
+img {
+    width: 400px;
+}
+
+#panel {
+    /* align-content: center; */
+    padding-top: 5%;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    transition: all 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+      /* 3d stuff */
+    transform-style: preserve-3d;
+}
+.slide-up{
+    /* transform: translateY(-50%) rotateX(70deg); */
+    transform: translateY(-90vh);
+}
+
+h3{
+    font-size: 2em;
+}
+.screenshots{
+    width: 70%;
+    display: inline-block;
+}
+
+#game{
+    padding: 10px 30px;
+    font-size: 2.4em;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.292);
+    cursor: pointer;
+}
+
+#game:hover{
+    background-color: rgb(150, 154, 232);
+    rotate: 180deg;
+}

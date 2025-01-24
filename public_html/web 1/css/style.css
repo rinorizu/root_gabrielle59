@@ -1,0 +1,160 @@
+/* Basic Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    color: rgb(170, 209, 244);
+
+    background-color: aliceblue;
+    background-image: url(../img/pexels-david-besh-884788.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 1440px;
+} 
+
+header{
+    width: 100%;
+    height: 177px;
+    background-color: beige;
+    padding: 20px;
+   /* position: fixed;*/
+}
+
+nav{
+    position: relative;
+    /*right 10px;*/
+    left: calc(100% - 400px);
+    top: -60px;
+    /*font-size: 22px;*/
+    color: black;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 12px;
+}
+
+nav a{
+    font-size: 2.0em;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a:visited{
+    color: lightpink;
+}
+
+nav a:hover{
+    color: aquamarine;
+}
+
+#banner {
+    background-image: url(../project1/img/cafe.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+}
+
+main, footer{
+    padding: 20px;
+}
+
+main article p{
+    /* max-width: 60ch; */
+    max-width: 800px;
+}
+
+main{
+    background-color: rgb(250, 139, 181);
+    padding-top: 197px;
+}
+
+footer {
+    background-color: rgb(181, 135, 233);
+}
+
+.fancy-button {
+    background-color: bisque;
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px;
+    border: 2px double purple;
+    color: black;
+    font-weight: bold;
+}
+
+.fancy-button:hover {
+    background-color: blanchedalmond;
+    color: rgb(221, 66, 244);
+    rotate: 2deg;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
+    gap: 22px;
+}
+
+#logo {
+    position: relative;
+    top: 41px;
+    left: -24px;
+}
+#title-box{
+    position: -50px;
+    left: 10px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: aliceblue;
+}
+
+#title-box p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+button{
+    border-radius: 20px;
+    padding: 20px 30px;
+    background-color: beige;
+    margin-top: 20vh;
+    border: none;
+}
+
+footer{
+    text-align: center;
+}
+
+footer img{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*Styling the Forms*/
+
+@media screen and (max-width:660px){
+    nav{
+        left: 0px;
+    }
+   nav a{
+    font-size: 1.5em;
+   } 
+}
