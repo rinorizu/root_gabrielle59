@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div{
+    text-align: center;
+}
+
+  h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+    color: rgb(133, 239, 177);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 10px #13793c;
+  }
+
+  h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    color: rgb(133, 239, 177);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body{
+    background-color: #73c073;
+  }
+
+  p{
+    text-align: center;
+    padding: 10px;
+  }
+
+  a {
+    color: rgb(44, 126, 82);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+  } 
+  
+  a:hover {
+   color: rgb(37, 98, 61);
+
+  }
