@@ -1,0 +1,40 @@
+/*transitions.css*/
+
+a:link{
+    transition: color 0.5s;
+}
+
+img{
+    opacity: 0.25;
+    transition: opacity 500ms;
+}
+
+img:hover{
+    opacity:  1;
+}
+
+/*challenge exercise*/
+
+figure{
+    position: relative;
+}
+
+figure img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+figure .img1{
+    opacity: 1;
+    width: 472px;
+    height: 500px;
+}
+
+figure .img2{
+    opacity: 0;
+}
+
+figure:hover .img2{
+    opacity: 1;
+}

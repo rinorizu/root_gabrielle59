@@ -1,0 +1,57 @@
+/* 2d_transform.css*/
+
+article{
+    position: relative;
+}
+
+#cards{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+
+figure img{
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
+#studio{
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+#village{
+    transition: 0.5s;
+}
+
+#village{
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.95);
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    opacity: 0;
+    position: relative;
+    top: 1.7rem;
+}
+
+#village:hover{
+    transform: translateY(-40px);
+    border-radius: 15px;
+    opacity: 1;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+#text{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(113, 99, 215);
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    font-size: 30px;
+}
