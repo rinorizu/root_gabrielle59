@@ -7,14 +7,14 @@ main{
   
     /* perspective & perspective-origin */
     perspective: 10em;
-    perspective-origin: 50% calc(50% - 3em);
+    perspective-origin: 50% calc(50% - 4em);
   
   }
   
   .scene{
     position: relative;
     transform-style: preserve-3d;
-    /* animation: rotate 30s linear infinite; */
+    animation: rotate 30s linear infinite;
   
   }
   
@@ -24,7 +24,7 @@ main{
     position: absolute;
     top: 1em;
     background-image: 
-      radial-gradient(rgb(32 32 32 /.75) 10%,rgb(32 32 32 /.05) 20%, rgb(32 32 32 / 1) 60%),
+      radial-gradient(rgba(79, 8, 8, 0.75) 10%,rgba(131, 6, 6, 0.05) 20%, rgb(32 32 32 / 1) 60%),
       repeating-conic-gradient(from 45deg, rgb(240 240 240 /.5) 0deg 90deg, rgb(64 64 64 /.5) 90deg 180deg);
     background-size: 100%, 1em 1em;
     transform: translate(-50%, -50%) rotateX(90deg);
@@ -53,7 +53,7 @@ main{
     width: 0.25em;
     height: 0.25em;
     border-radius: 50%;
-    background-color: rgb(240 64 250 / 1);
+    background-color: rgb(81, 98, 225);
     transform: translate(-50%, -50%);
   }
   
@@ -61,7 +61,7 @@ main{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgb(33 66 99 /0.5);
+    background-color: rgba(194, 37, 37, 0.5);
     /* box-shadow: inset 0 0 0.5em 0 rgb(12 24 36 / 0.75); */
   }
   
@@ -72,23 +72,23 @@ main{
   }
   
   .back{
-    transform :rotateY(180deg)  translateZ(-1em);
+    transform :rotateY(180deg)  translateZ(1em);
   }
   
   .right{
-    transform :rotateY(900deg)  translateX(0);
+    transform :rotateY(90deg)  translateZ(1em);
   }
   
   .left{
-    
+    transform: rotateY(90deg)  translateZ(-1em); 
   }
   
   .top{
-    
+    transform: rotateX(-90deg) translateZ(-1em);
   }
   
   .bottom{
-    
+    transform: rotateX(-90deg) translateZ(-1em);    
   }
   
   .ball{

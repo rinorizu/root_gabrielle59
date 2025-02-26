@@ -27,7 +27,7 @@
     font-size: 1.2rem;
     font-family: Consolas, "Andale Mono", "Lucida Console", "DejaVu Sans Mono",
       "Courier New", monospace;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(1, 8, 70, 0.75);
     white-space: pre-wrap;
   }
   small {
