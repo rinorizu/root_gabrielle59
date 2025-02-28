@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.pirata-one-regular {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#cards{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-items: center;
+}
+
+#creatures{
+    width: 20rem;
+    height: 34rem;
+    border-radius: 2rem;
+}
+
+#tarot{
+    width: 20rem;
+    height: 34rem;
+    border-radius: 2rem;
+}
+
+body{
+    background-color: black;
+}
+
+.text{
+    font-family: "Pirata One", system-ui;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.title{
+    font-family:"Fleur De Leah", cursive;
+    color: rgb(242, 199, 68);
+    font-size: 4rem;
+}
+
+h1{
+    font-family:"Fleur De Leah", cursive;
+    color: rgb(242, 199, 68);
+    font-size: 5rem;
+    text-align: center;
+}
+
+#creatures{
+    animation-name: appearing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: initial;
+}
+
+#tarot{
+    animation-name: magic;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: initial;
+}
+
+@keyframes appearing {
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(3px);
+        opacity: 1;
+    }
+}
+
+@keyframes magic {
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+}
