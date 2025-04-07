@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: rgb(92, 116, 87);
+}
+
+h1{
+    text-align: center;
+    font-family:"Zen Kaku Gothic Antique", sans-serif;
+    font-size: 2.5rem;
+    color: rgb(244, 243, 238);
+}
+
+h2{
+    text-align: center;
+    font-family:"Zen Kaku Gothic Antique", sans-serif;
+}
+
+.zen-kaku-gothic-antique-regular {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #logo{
+    transition: 0.5s;
+  }
+
+  #logo{
+    width: 300px;
+    height: 100px;
+    opacity: 0;
+  }
+
+  #logo:hover{
+    transform: scale(2);
+    opacity: 1;
+  }
+
+  #raindrop{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+  }
+
