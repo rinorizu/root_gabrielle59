@@ -18,6 +18,8 @@ h1{
 h2{
     text-align: center;
     font-family:"Zen Kaku Gothic Antique", sans-serif;
+    color: rgb(244, 243, 238);
+
 }
 
 .zen-kaku-gothic-antique-regular {
@@ -46,4 +48,25 @@ h2{
     height: 200px;
     opacity: 1;
   }
+
+  #cards{
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+  }
+
+  p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+  }
+
+
 
