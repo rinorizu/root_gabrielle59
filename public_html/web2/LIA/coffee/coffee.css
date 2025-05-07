@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  h1{
+    font-family: "DM Serif Text", serif;
+    font-size: 2rem;
+    color: white;
+  }
+
+  body{
+    background-color: #F2F2F2;
+  }
+  
+  #navigation{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    background-color: #6F4E37;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  footer{
+    background-color: #6F4E37;
+    text-align: center;
+    padding: 30px;
+    font-family: "DM Serif Text", serif;
+    color: white;
+    }
+
+#description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin: 10px;
+    justify-items: center;
+}
+
+#tags{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    justify-items: center;
+}
+
+#info{
+    background-color: #6F4E37;
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+
+}
+
+#recommendations{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  margin: 10px;
+  justify-items: center;
+}
+
+p{
+  font-family: "Kanit", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.box{
+  background-color: #D9B9A7;
+  border-radius: 10px;
+  width: 50%;
+}
+
+#group{
+  align-content: space-around;
+}
+
+#ofni{
+  background-color: #6F4E37;
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#puorg{
+  display: grid;
+  width: 80%;
+  align-items: center;
+}
+
+#resto{
+  width: 480px;
+  height: 300px;
+}
+
+
+@media screen and (max-width: 624px) {
+  #description{
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  p{
+    font-size: 0.5rem;
+  }
+}
